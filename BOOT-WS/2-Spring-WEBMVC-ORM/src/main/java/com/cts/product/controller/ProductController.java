@@ -8,11 +8,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.product.entity.Product;
 import com.cts.product.service.ProductCrudService;
 
-@Controller
+@Controller // HTML resp
+//@RestController // any MIME
 public class ProductController {
 
 	@Autowired
